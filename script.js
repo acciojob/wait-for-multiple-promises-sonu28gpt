@@ -2,7 +2,8 @@
 
 
 	let tr=document.createElement('tr');
-	tr.innerHTML=`<td id='loading' colspan=2 >Loading...</td>`;
+	tr.innerHTML=`<td  colspan=2 >Loading...</td>`;
+	tr.setAttribute('id','loading');
 	let output=document.querySelector('#output');
 	output.appendChild(tr);
 	let promise1=()=>{
