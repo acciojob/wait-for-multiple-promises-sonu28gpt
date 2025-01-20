@@ -1,9 +1,9 @@
 //your JS code here. If required.
 
  let startTime=Date.now();
- console.log(startTime);
 	let tr=document.createElement('tr');
-	tr.innerHTML=`<td colspan=2 >Loading...</td>`;
+	tr.innerHTML=`<td  colspan=2 >Loading...</td>`;
+	tr.setAttribute('id','loading');
 	let output=document.querySelector('#output');
 	output.appendChild(tr);
 	let promise1=()=>{
@@ -42,10 +42,21 @@
                         <td>${el}</td>`;
         output.appendChild(tr);
       })
-      let endTime=Date.now();
-      console.log(endTime);
+		 let endTime=Date.now();
+      // console.log(endTime);
       total=(endTime-startTime)/1000;
        output.innerHTML+=`<tr><td>Total</td>
                         <td>${total}</td></tr>`;
-      
+
 	})
+
+
+
+	
+
+
+
+
+
+
+
